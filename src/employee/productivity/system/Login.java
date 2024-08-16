@@ -76,6 +76,7 @@ public class Login extends JFrame implements ActionListener{
         if (e.getSource() == login) {
             try {
                 String username = tusername.getText();
+                @SuppressWarnings("deprecation")
                 String password = tpassword.getText();
 
                 conn conn = new conn();

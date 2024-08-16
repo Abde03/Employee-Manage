@@ -17,12 +17,14 @@ public class AddEmploye extends  JFrame implements ActionListener{
     JTextField tname , tcin , tadress , tphone , temail , tsalary ;
     JDateChooser tdate;
     JLabel tempid;
+    @SuppressWarnings("rawtypes")
     JComboBox tposte , tstatut , tcontrat;
 
     JButton add,back;
 
     
     
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     AddEmploye() {
 
         getContentPane().setBackground(new Color(169, 150, 250));
