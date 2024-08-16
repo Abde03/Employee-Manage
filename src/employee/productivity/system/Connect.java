@@ -8,9 +8,9 @@ public class Connect {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection(
-                "jdbc:mysql://127.0.0.1:3306/productivity",
-                "root",
-                "abde"
+                "your database url",
+                "user",
+                "password"
             );
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT * FROM login");
